@@ -1,7 +1,7 @@
 package install_handler
 
 import (
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
+	"github.com/evelive3/go-gin-api/internal/pkg/core"
 
 	"go.uber.org/zap"
 )

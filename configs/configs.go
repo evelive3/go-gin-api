@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/xinliangnote/go-gin-api/pkg/env"
+	"github.com/evelive3/go-gin-api/pkg/env"
 
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"
@@ -12,7 +12,27 @@ import (
 
 var config = new(Config)
 
+const (
+	defaultProjectName = "go-gin-api"
+	defaultWebScheme   = "http"
+	defaultWebHost     = "127.0.0.1"
+	defaultWebPort     = 9999
+	defaultLogLevel    = "info"
+)
+
+// 配置文件映射结构体
 type Config struct {
+	Project struct {
+		Name string `toml:"name"`
+	} `toml:"project"`
+	Web struct {
+		Scheme string `toml:"scheme"`
+		Host   string `toml:"host"`
+		Port   int    `toml:"port"`
+	} `toml:"web"`
+	Log struct {
+		Level string `toml:"level"`
+	} `toml:"log"`
 	MySQL struct {
 		Read struct {
 			Addr string `toml:"addr"`
@@ -66,6 +86,8 @@ type Config struct {
 	} `toml:"hashids"`
 }
 
+// init 特殊函数init，在该包被import时运行，执行当前包的初始化动作
+// golang初始化顺序：变量初始化->init()->main()
 func init() {
 	viper.SetConfigName(env.Active().Value() + "_configs")
 	viper.SetConfigType("toml")
@@ -92,17 +114,37 @@ func Get() Config {
 }
 
 func ProjectName() string {
-	return "go-gin-api"
+	if config.Project.Name == "" {
+		config.Project.Name = defaultProjectName
+	}
+	return config.Project.Name
 }
 
-func ProjectPort() string {
-	return ":9999"
+func WebPort() int {
+	if config.Web.Port == 0 {
+		config.Web.Port = defaultWebPort
+	}
+	return config.Web.Port
 }
 
-func ProjectLogFile() string {
+func WebAddr() string {
+	if config.Web.Port == 0 {
+		config.Web.Port = defaultWebPort
+	}
+	return fmt.Sprintf("%s:%d", config.Web.Host, config.Web.Port)
+}
+
+func WebURL() string {
+	if config.Web.Host == "" {
+		config.Web.Host = defaultWebHost
+	}
+	return fmt.Sprintf("%s://%s:%d", config.Web.Scheme, config.Web.Host, config.Web.Port)
+}
+
+func LogFile() string {
 	return fmt.Sprintf("./logs/%s-access.log", ProjectName())
 }
 
-func ProjectInstallFile() string {
+func InstallFile() string {
 	return "INSTALL.lock"
 }

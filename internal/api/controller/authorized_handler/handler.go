@@ -1,12 +1,12 @@
 package authorized_handler
 
 import (
-	"github.com/xinliangnote/go-gin-api/configs"
-	"github.com/xinliangnote/go-gin-api/internal/api/service/authorized_service"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/cache"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/db"
-	"github.com/xinliangnote/go-gin-api/pkg/hash"
+	"github.com/evelive3/go-gin-api/configs"
+	"github.com/evelive3/go-gin-api/internal/api/service/authorized_service"
+	"github.com/evelive3/go-gin-api/internal/pkg/cache"
+	"github.com/evelive3/go-gin-api/internal/pkg/core"
+	"github.com/evelive3/go-gin-api/internal/pkg/db"
+	"github.com/evelive3/go-gin-api/pkg/hash"
 
 	"go.uber.org/zap"
 )

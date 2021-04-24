@@ -7,14 +7,14 @@ import (
 	"runtime/debug"
 	"time"
 
-	"github.com/xinliangnote/go-gin-api/configs"
-	_ "github.com/xinliangnote/go-gin-api/docs"
-	"github.com/xinliangnote/go-gin-api/internal/api/code"
-	"github.com/xinliangnote/go-gin-api/pkg/browser"
-	"github.com/xinliangnote/go-gin-api/pkg/color"
-	"github.com/xinliangnote/go-gin-api/pkg/env"
-	"github.com/xinliangnote/go-gin-api/pkg/errno"
-	"github.com/xinliangnote/go-gin-api/pkg/trace"
+	"github.com/evelive3/go-gin-api/configs"
+	_ "github.com/evelive3/go-gin-api/docs"
+	"github.com/evelive3/go-gin-api/internal/api/code"
+	"github.com/evelive3/go-gin-api/pkg/browser"
+	"github.com/evelive3/go-gin-api/pkg/color"
+	"github.com/evelive3/go-gin-api/pkg/env"
+	"github.com/evelive3/go-gin-api/pkg/errno"
+	"github.com/evelive3/go-gin-api/pkg/trace"
 
 	"github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"
@@ -252,7 +252,7 @@ func New(logger *zap.Logger, options ...Option) (Mux, error) {
 	}
 
 	fmt.Println(color.Blue(_UI))
-	fmt.Println(color.Green(fmt.Sprintf("* [register port %s]", configs.ProjectPort())))
+	fmt.Println(color.Green(fmt.Sprintf("* [register addr %s]", configs.WebAddr())))
 	fmt.Println(color.Green(fmt.Sprintf("* [register env %s]", env.Active().Value())))
 
 	mux.engine.StaticFS("bootstrap", http.Dir("./assets/bootstrap"))

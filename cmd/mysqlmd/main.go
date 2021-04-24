@@ -9,7 +9,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/xinliangnote/go-gin-api/cmd/mysqlmd/mysql"
+	"github.com/evelive3/go-gin-api/cmd/mysqlmd/mysql"
 
 	"gorm.io/gorm"
 )

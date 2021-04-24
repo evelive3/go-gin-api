@@ -8,7 +8,7 @@ import (
 	httpURL "net/url"
 	"time"
 
-	"github.com/xinliangnote/go-gin-api/pkg/trace"
+	"github.com/evelive3/go-gin-api/pkg/trace"
 
 	"github.com/pkg/errors"
 )

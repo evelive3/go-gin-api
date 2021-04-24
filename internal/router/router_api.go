@@ -1,11 +1,11 @@
 package router
 
 import (
-	"github.com/xinliangnote/go-gin-api/internal/api/controller/admin_handler"
-	"github.com/xinliangnote/go-gin-api/internal/api/controller/authorized_handler"
-	"github.com/xinliangnote/go-gin-api/internal/api/controller/config_handler"
-	"github.com/xinliangnote/go-gin-api/internal/api/controller/tool_handler"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
+	"github.com/evelive3/go-gin-api/internal/api/controller/admin_handler"
+	"github.com/evelive3/go-gin-api/internal/api/controller/authorized_handler"
+	"github.com/evelive3/go-gin-api/internal/api/controller/config_handler"
+	"github.com/evelive3/go-gin-api/internal/api/controller/tool_handler"
+	"github.com/evelive3/go-gin-api/internal/pkg/core"
 )
 
 func setApiRouter(r *resource) {

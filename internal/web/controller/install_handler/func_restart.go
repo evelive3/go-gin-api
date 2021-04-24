@@ -5,7 +5,7 @@ import (
 	"os/exec"
 	"runtime"
 
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
+	"github.com/evelive3/go-gin-api/internal/pkg/core"
 )
 
 func (h *handler) Restart() core.HandlerFunc {

@@ -3,11 +3,11 @@ package admin_handler
 import (
 	"net/http"
 
-	"github.com/xinliangnote/go-gin-api/internal/api/code"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/cache"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/password"
-	"github.com/xinliangnote/go-gin-api/pkg/errno"
+	"github.com/evelive3/go-gin-api/internal/api/code"
+	"github.com/evelive3/go-gin-api/internal/pkg/cache"
+	"github.com/evelive3/go-gin-api/internal/pkg/core"
+	"github.com/evelive3/go-gin-api/internal/pkg/password"
+	"github.com/evelive3/go-gin-api/pkg/errno"
 
 	"github.com/pkg/errors"
 	"github.com/spf13/cast"

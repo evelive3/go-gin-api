@@ -3,7 +3,7 @@ package resolvers
 import (
 	"context"
 
-	"github.com/xinliangnote/go-gin-api/internal/graph/model"
+	"github.com/evelive3/go-gin-api/internal/graph/model"
 
 	"github.com/pkg/errors"
 )

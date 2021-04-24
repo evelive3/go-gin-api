@@ -1,9 +1,9 @@
 package third_party_request
 
 import (
-	"github.com/xinliangnote/go-gin-api/configs"
-	"github.com/xinliangnote/go-gin-api/pkg/httpclient"
-	"github.com/xinliangnote/go-gin-api/pkg/mail"
+	"github.com/evelive3/go-gin-api/configs"
+	"github.com/evelive3/go-gin-api/pkg/httpclient"
+	"github.com/evelive3/go-gin-api/pkg/mail"
 
 	"github.com/pkg/errors"
 )

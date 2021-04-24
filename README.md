@@ -40,7 +40,7 @@ go-gin-api 文档由以下几个主要部分组成：
 
 ## 其他
 
-查看 Jaeger 链路追踪代码，请查看 [v1.0版](https://github.com/xinliangnote/go-gin-api/releases/tag/v1.0)，文档点这里 [jaeger.md](https://github.com/xinliangnote/go-gin-api/blob/master/docs/jaeger.md) 。
+查看 Jaeger 链路追踪代码，请查看 [v1.0版](https://github.com/evelive3/go-gin-api/releases/tag/v1.0)，文档点这里 [jaeger.md](https://github.com/evelive3/go-gin-api/blob/master/docs/jaeger.md) 。
 
 ## Special Thanks
 
@@ -48,5 +48,5 @@ go-gin-api 文档由以下几个主要部分组成：
 
 ## Learning together
 
-![](https://github.com/xinliangnote/Go/blob/master/00-基础语法/images/qr.jpg)
+![](https://github.com/evelive3/Go/blob/master/00-基础语法/images/qr.jpg)
 

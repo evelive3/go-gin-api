@@ -1,3 +1,13 @@
+[project]
+  name = "go-planet"
+
+[web]
+  scheme = "http"
+  host = "192.168.1.100"
+  port = 9000
+
+[log]
+  level = "info"
 
 [hashids]
   length = 12
@@ -5,7 +15,7 @@
 
 [jwt]
   expireduration = 24
-  secret = "i1ydX9RtHyuJTrw7frcu"
+  secret = "weeNgeaCeigho3Iheeg7"
 
 [mail]
   host = "smtp.163.com"
@@ -43,4 +53,4 @@
 
 [urltoken]
   expireduration = 10
-  secret = "i1ydX9RtHyuJTrw7frcu"
+  secret = "Ei3boo0ril6ith0zaelo"

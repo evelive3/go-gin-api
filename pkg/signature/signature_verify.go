@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xinliangnote/go-gin-api/pkg/time_parse"
+	"github.com/evelive3/go-gin-api/pkg/time_parse"
 
 	"github.com/pkg/errors"
 )

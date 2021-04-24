@@ -1,9 +1,9 @@
 package admin_service
 
 import (
-	"github.com/xinliangnote/go-gin-api/internal/api/repository/db_repo/admin_repo"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/password"
+	"github.com/evelive3/go-gin-api/internal/api/repository/db_repo/admin_repo"
+	"github.com/evelive3/go-gin-api/internal/pkg/core"
+	"github.com/evelive3/go-gin-api/internal/pkg/password"
 )
 
 type CreateAdminData struct {

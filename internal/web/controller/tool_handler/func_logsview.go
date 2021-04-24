@@ -3,9 +3,9 @@ package tool_handler
 import (
 	"encoding/json"
 
-	"github.com/xinliangnote/go-gin-api/configs"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
-	"github.com/xinliangnote/go-gin-api/pkg/file"
+	"github.com/evelive3/go-gin-api/configs"
+	"github.com/evelive3/go-gin-api/internal/pkg/core"
+	"github.com/evelive3/go-gin-api/pkg/file"
 
 	"go.uber.org/zap"
 )
@@ -44,7 +44,7 @@ func (h *handler) LogsView() core.HandlerFunc {
 	}
 
 	return func(c core.Context) {
-		readLineFromEnd, err := file.NewReadLineFromEnd(configs.ProjectLogFile())
+		readLineFromEnd, err := file.NewReadLineFromEnd(configs.LogFile())
 		if err != nil {
 			h.logger.Error("NewReadLineFromEnd err", zap.Error(err))
 		}

@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
-	"github.com/xinliangnote/go-gin-api/pkg/env"
+	"github.com/evelive3/go-gin-api/internal/pkg/core"
+	"github.com/evelive3/go-gin-api/pkg/env"
 
 	"github.com/shirou/gopsutil/cpu"
 	"github.com/shirou/gopsutil/disk"

@@ -6,7 +6,7 @@ import (
 	"html/template"
 	"time"
 
-	"github.com/xinliangnote/go-gin-api/internal/pkg/notify/templates"
+	"github.com/evelive3/go-gin-api/internal/pkg/notify/templates"
 )
 
 // NewPanicHTMLEmail 发送系统异常邮件 html

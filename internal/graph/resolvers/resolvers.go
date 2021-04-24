@@ -3,10 +3,10 @@ package resolvers
 import (
 	"context"
 
-	"github.com/xinliangnote/go-gin-api/internal/graph/generated"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/cache"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/db"
+	"github.com/evelive3/go-gin-api/internal/graph/generated"
+	"github.com/evelive3/go-gin-api/internal/pkg/cache"
+	"github.com/evelive3/go-gin-api/internal/pkg/core"
+	"github.com/evelive3/go-gin-api/internal/pkg/db"
 
 	"go.uber.org/zap"
 )

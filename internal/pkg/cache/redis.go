@@ -3,9 +3,9 @@ package cache
 import (
 	"time"
 
-	"github.com/xinliangnote/go-gin-api/configs"
-	"github.com/xinliangnote/go-gin-api/pkg/time_parse"
-	"github.com/xinliangnote/go-gin-api/pkg/trace"
+	"github.com/evelive3/go-gin-api/configs"
+	"github.com/evelive3/go-gin-api/pkg/time_parse"
+	"github.com/evelive3/go-gin-api/pkg/trace"
 
 	"github.com/go-redis/redis/v7"
 	"github.com/pkg/errors"

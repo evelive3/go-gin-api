@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/xinliangnote/go-gin-api/configs"
-	"github.com/xinliangnote/go-gin-api/internal/api/code"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
-	"github.com/xinliangnote/go-gin-api/internal/web/controller/install_handler/mysql_table"
-	"github.com/xinliangnote/go-gin-api/pkg/env"
-	"github.com/xinliangnote/go-gin-api/pkg/errno"
+	"github.com/evelive3/go-gin-api/configs"
+	"github.com/evelive3/go-gin-api/internal/api/code"
+	"github.com/evelive3/go-gin-api/internal/pkg/core"
+	"github.com/evelive3/go-gin-api/internal/web/controller/install_handler/mysql_table"
+	"github.com/evelive3/go-gin-api/pkg/env"
+	"github.com/evelive3/go-gin-api/pkg/errno"
 
 	"github.com/go-redis/redis/v7"
 	"github.com/spf13/cast"
@@ -188,7 +188,7 @@ func (h *handler) Execute() core.HandlerFunc {
 		outPutString += "初始化 MySQL 数据表：admin 默认数据成功。\n"
 
 		// 生成 install 完成标识
-		f, err := os.Create(configs.ProjectInstallFile())
+		f, err := os.Create(configs.InstallFile())
 		if err != nil {
 			c.AbortWithError(errno.NewError(
 				http.StatusBadRequest,

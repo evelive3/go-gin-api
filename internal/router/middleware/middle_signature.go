@@ -5,10 +5,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xinliangnote/go-gin-api/internal/api/code"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
-	"github.com/xinliangnote/go-gin-api/pkg/errno"
-	"github.com/xinliangnote/go-gin-api/pkg/signature"
+	"github.com/evelive3/go-gin-api/internal/api/code"
+	"github.com/evelive3/go-gin-api/internal/pkg/core"
+	"github.com/evelive3/go-gin-api/pkg/errno"
+	"github.com/evelive3/go-gin-api/pkg/signature"
 
 	"github.com/koketama/urltable"
 	"github.com/pkg/errors"

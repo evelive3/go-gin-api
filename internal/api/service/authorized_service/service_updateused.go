@@ -1,10 +1,10 @@
 package authorized_service
 
 import (
-	"github.com/xinliangnote/go-gin-api/internal/api/repository/db_repo"
-	"github.com/xinliangnote/go-gin-api/internal/api/repository/db_repo/authorized_repo"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/cache"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
+	"github.com/evelive3/go-gin-api/internal/api/repository/db_repo"
+	"github.com/evelive3/go-gin-api/internal/api/repository/db_repo/authorized_repo"
+	"github.com/evelive3/go-gin-api/internal/pkg/cache"
+	"github.com/evelive3/go-gin-api/internal/pkg/core"
 
 	"gorm.io/gorm"
 )

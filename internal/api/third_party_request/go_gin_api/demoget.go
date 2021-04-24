@@ -3,7 +3,7 @@ package go_gin_api
 import (
 	"encoding/json"
 
-	"github.com/xinliangnote/go-gin-api/pkg/httpclient"
+	"github.com/evelive3/go-gin-api/pkg/httpclient"
 
 	"github.com/pkg/errors"
 )

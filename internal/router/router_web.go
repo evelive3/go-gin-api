@@ -1,14 +1,14 @@
 package router
 
 import (
-	"github.com/xinliangnote/go-gin-api/internal/web/controller/admin_handler"
-	"github.com/xinliangnote/go-gin-api/internal/web/controller/authorized_handler"
-	"github.com/xinliangnote/go-gin-api/internal/web/controller/config_handler"
-	"github.com/xinliangnote/go-gin-api/internal/web/controller/dashboard_handler"
-	"github.com/xinliangnote/go-gin-api/internal/web/controller/gencode_handler"
-	"github.com/xinliangnote/go-gin-api/internal/web/controller/index_handler"
-	"github.com/xinliangnote/go-gin-api/internal/web/controller/install_handler"
-	"github.com/xinliangnote/go-gin-api/internal/web/controller/tool_handler"
+	"github.com/evelive3/go-gin-api/internal/web/controller/admin_handler"
+	"github.com/evelive3/go-gin-api/internal/web/controller/authorized_handler"
+	"github.com/evelive3/go-gin-api/internal/web/controller/config_handler"
+	"github.com/evelive3/go-gin-api/internal/web/controller/dashboard_handler"
+	"github.com/evelive3/go-gin-api/internal/web/controller/gencode_handler"
+	"github.com/evelive3/go-gin-api/internal/web/controller/index_handler"
+	"github.com/evelive3/go-gin-api/internal/web/controller/install_handler"
+	"github.com/evelive3/go-gin-api/internal/web/controller/tool_handler"
 )
 
 func setWebRouter(r *resource) {

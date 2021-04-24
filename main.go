@@ -6,11 +6,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/xinliangnote/go-gin-api/configs"
-	"github.com/xinliangnote/go-gin-api/internal/router"
-	"github.com/xinliangnote/go-gin-api/pkg/env"
-	"github.com/xinliangnote/go-gin-api/pkg/logger"
-	"github.com/xinliangnote/go-gin-api/pkg/shutdown"
+	"github.com/evelive3/go-gin-api/configs"
+	"github.com/evelive3/go-gin-api/internal/router"
+	"github.com/evelive3/go-gin-api/pkg/env"
+	"github.com/evelive3/go-gin-api/pkg/logger"
+	"github.com/evelive3/go-gin-api/pkg/shutdown"
 
 	"go.uber.org/zap"
 )
@@ -24,7 +24,7 @@ import (
 // @contact.email
 
 // @license.name MIT
-// @license.url https://github.com/xinliangnote/go-gin-api/blob/master/LICENSE
+// @license.url https://github.com/evelive3/go-gin-api/blob/master/LICENSE
 
 // @host 127.0.0.1:9999
 // @BasePath
@@ -33,7 +33,7 @@ func main() {
 	loggers, err := logger.NewJSONLogger(
 		logger.WithField("domain", fmt.Sprintf("%s[%s]", configs.ProjectName(), env.Active().Value())),
 		logger.WithTimeLayout("2006-01-02 15:04:05"),
-		logger.WithFileP(configs.ProjectLogFile()),
+		logger.WithFileP(configs.LogFile()),
 	)
 	if err != nil {
 		panic(err)
@@ -47,7 +47,7 @@ func main() {
 	}
 
 	server := &http.Server{
-		Addr:    configs.ProjectPort(),
+		Addr:    configs.WebAddr(),
 		Handler: s.Mux,
 	}
 

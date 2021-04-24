@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xinliangnote/go-gin-api/internal/api/third_party_request"
-	"github.com/xinliangnote/go-gin-api/pkg/httpclient"
+	"github.com/evelive3/go-gin-api/internal/api/third_party_request"
+	"github.com/evelive3/go-gin-api/pkg/httpclient"
 )
 
 var demoGetAuthorization = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEsIlVzZXJOYW1lIjoieGlubGlhbmdub3RlIiwiZXhwIjoxNjEzODI3MTEzLCJpYXQiOjE2MTM3NDA3MTMsIm5iZiI6MTYxMzc0MDcxM30.SnooP1ikO33ryGPdohsmOKqISa-bWzMkMvUNb5f2zc0"

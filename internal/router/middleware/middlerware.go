@@ -1,12 +1,12 @@
 package middleware
 
 import (
-	"github.com/xinliangnote/go-gin-api/internal/api/service/admin_service"
-	"github.com/xinliangnote/go-gin-api/internal/api/service/authorized_service"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/cache"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/db"
-	"github.com/xinliangnote/go-gin-api/pkg/errno"
+	"github.com/evelive3/go-gin-api/internal/api/service/admin_service"
+	"github.com/evelive3/go-gin-api/internal/api/service/authorized_service"
+	"github.com/evelive3/go-gin-api/internal/pkg/cache"
+	"github.com/evelive3/go-gin-api/internal/pkg/core"
+	"github.com/evelive3/go-gin-api/internal/pkg/db"
+	"github.com/evelive3/go-gin-api/pkg/errno"
 
 	"go.uber.org/zap"
 )

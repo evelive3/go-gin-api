@@ -4,8 +4,8 @@ import (
 	"go/token"
 	"log"
 
-	"github.com/xinliangnote/go-gin-api/internal/api/code"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
+	"github.com/evelive3/go-gin-api/internal/api/code"
+	"github.com/evelive3/go-gin-api/internal/pkg/core"
 
 	"github.com/dave/dst"
 	"github.com/dave/dst/decorator"

@@ -1,9 +1,9 @@
 package notify
 
 import (
-	"github.com/xinliangnote/go-gin-api/configs"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
-	"github.com/xinliangnote/go-gin-api/pkg/mail"
+	"github.com/evelive3/go-gin-api/configs"
+	"github.com/evelive3/go-gin-api/internal/pkg/core"
+	"github.com/evelive3/go-gin-api/pkg/mail"
 
 	"go.uber.org/zap"
 )
